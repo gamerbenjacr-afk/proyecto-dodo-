@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dodo Sushi Bar | Sushi fresco en San Esteban, San Felipe y Santa María</title>
+  <meta name="description" content="Dodo Sushi Bar: Rolls artesanales, ingredientes frescos, atención cercana. Pide por WhatsApp o visítanos en San Esteban, San Felipe y Santa María.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" data-header>
+    <a class="brand" href="#inicio">
+      <img class="brand-logo" src="images/logo.png" alt="Logo Dodo Sushi Bar">
+      <span class="brand-name">Dodo <span>Sushi Bar</span></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+      <i data-lucide="menu"></i>
+      <span class="sr-only">Abrir menú</span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" data-nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#carta">Carta</a>
+      <a href="#locales">Locales</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a class="header-cta" href="https://wa.me/56954322784" target="_blank" rel="noreferrer">
+      <i data-lucide="message-circle"></i>
+      Pedir ahora
+    </a>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="hero-tag">🍣 San Esteban · San Felipe · Santa María</p>
+        <h1>El arte del sushi,<br>cerca de ti</h1>
+        <p>Rolls artesanales preparados al momento con los mejores ingredientes. Vive la experiencia Dodo.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/56954322784" target="_blank" rel="noreferrer">
+            <i data-lucide="message-circle"></i>
+            Hacer pedido
+          </a>
+          <a class="btn btn-ghost" href="#carta">
+            <i data-lucide="utensils"></i>
+            Ver la carta
+          </a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>3</strong><span>Locales</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>+20</strong><span>Tipos de rolls</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>100%</strong><span>Ingredientes frescos</span></div>
+      </div>
+      <a class="scroll-cue" href="#nosotros"><i data-lucide="chevron-down"></i></a>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="section about-section" id="nosotros">
+      <div class="section-inner about-grid">
+        <div class="about-images">
+          <img class="about-img about-img--main" src="https://images.unsplash.com/photo-1617196034183-421b4040ed20?auto=format&fit=crop&w=800&q=80" alt="Chef preparando sushi">
+          <img class="about-img about-img--accent" src="https://images.unsplash.com/photo-1562802378-063ec186a863?auto=format&fit=crop&w=400&q=80" alt="Rolls de sushi">
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">Nuestra historia</p>
+          <h2>Pasión japonesa con alma local</h2>
+          <p>En Dodo Sushi Bar nació la idea de traer el verdadero sabor del sushi a nuestra zona. Cada roll es una pequeña obra de arte: ingredientes seleccionados, técnica cuidada y un servicio que te hace sentir como en casa.</p>
+          <p>Hoy somos tres locales en la zona y seguimos creciendo, pero nunca perdemos lo más importante: la calidad y el cariño en cada preparación.</p>
+          <div class="about-badges">
+            <div class="badge"><i data-lucide="leaf"></i> Ingredientes frescos</div>
+            <div class="badge"><i data-lucide="clock"></i> Pedidos en 15 min</div>
+            <div class="badge"><i data-lucide="heart"></i> Hecho con amor</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section class="section menu-section" id="carta">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="eyebrow">Nuestra Carta</p>
+          <h2>Especialidades de la casa</h2>
+          <p class="section-desc">Cada plato preparado al momento, con ingredientes frescos y técnica japonesa.</p>
+        </div>
+
+        <div class="tabs" role="tablist">
+          <button class="tab is-active" role="tab" data-menu-filter="todos">Todos</button>
+          <button class="tab" role="tab" data-menu-filter="entradas">Entradas</button>
+          <button class="tab" role="tab" data-menu-filter="rollos">Rollos</button>
+          <button class="tab" role="tab" data-menu-filter="especiales">Especiales</button>
+          <button class="tab" role="tab" data-menu-filter="bebidas">Bebidas</button>
+        </div>
+
+        <div class="menu-grid" data-menu-grid>
+
+          <article class="menu-card" data-category="entradas">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80" alt="Edamame">
+              <span class="menu-badge">Entrada</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Edamame</h3>
+              <p>Porotos de soja al vapor con sal de mar y aceite de sésamo.</p>
+              <div class="menu-card-footer">
+                <strong>$4.990</strong>
+                <a class="order-btn" href="https://wa.me/56954322784?text=Hola!%20Quiero%20pedir%20Edamame%20(%244.990)" target="_blank">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="rollos">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1562802378-063ec186a863?auto=format&fit=crop&w=600&q=80" alt="Rollo Salmón Palta">
+              <span class="menu-badge">Rollo</span>
+              <span class="menu-badge menu-badge--hot">Popular</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Rollo Salmón Palta</h3>
+              <p>Salmón fresco, palta cremosa y toque de ajonjolí negro.</p>
+              <div class="menu-card-footer">
+                <strong>$9.990</strong>
+                <a class="order-btn" href="https://wa.me/56954322784?text=Hola!%20Quiero%20pedir%20Rollo%20Salm%C3%B3n%20Palta%20(%249.990)" target="_blank">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="rollos">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1625943553852-781e6e5ca3ee?auto=format&fit=crop&w=600&q=80" alt="Rollo Tempura">
+              <span class="menu-badge">Rollo</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Rollo Tempura</h3>
+              <p>Camarón crujiente, palta y salsa especial al estilo Dodo.</p>
+              <div class="menu-card-footer">
+                <strong>$11.490</strong>
+                <a class="order-btn" href="https://wa.me/56954322784?text=Hola!%20Quiero%20pedir%20Rollo%20Tempura%20(%2411.490)" target="_blank">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="especiales">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1534482421-64566f976cfa?auto=format&fit=crop&w=600&q=80" alt="Sashimi Variado">
+              <span class="menu-badge">Especial</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Sashimi Variado</h3>
+              <p>Cortes selectos de salmón, atún y pez blanco con salsa ponzu.</p>
+              <div class="menu-card-footer">
+                <strong>$14.990</strong>
+                <a class="order-btn" href="https://wa.me/56954322784?text=Hola!%20Quiero%20pedir%20Sashimi%20Variado%20(%2414.990)" target="_blank">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="especiales">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=600&q=80" alt="Nigiri Mix">
+              <span class="menu-badge">Especial</span>
+              <span class="menu-badge menu-badge--hot">Chef recomienda</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Nigiri Mix</h3>
+              <p>Selección de nigiris de salmón, atún y langostino con salsa de soja.</p>
+              <div class="menu-card-footer">
+                <strong>$13.490</strong>
+                <a class="order-btn" href="https://wa.me/56954322784?text=Hola!%20Quiero%20pedir%20Nigiri%20Mix%20(%2413.490)" target="_blank">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="bebidas">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80" alt="Bebidas">
+              <span class="menu-badge">Bebida</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Refrescos y Jugos</h3>
+              <p>Jugos naturales, bebidas frías y aguas saborizadas.</p>
+              <div class="menu-card-footer">
+                <strong>$2.500 – $3.800</strong>
+                <a class="order-btn" href="https://wa.me/56954322784?text=Hola!%20Quiero%20pedir%20una%20bebida" target="_blank">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA / BANNER -->
+    <section class="experience-band">
+      <div class="experience-inner">
+        <h2>"Cada roll es una experiencia que no olvidarás"</h2>
+        <p>Más de 3 años llevando el mejor sushi a la zona de Aconcagua</p>
+        <a class="btn btn-primary" href="https://wa.me/56954322784" target="_blank" rel="noreferrer">Hacer mi pedido ahora</a>
+      </div>
+    </section>
+
+    <!-- LOCALES -->
+    <section class="section locations-section" id="locales">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="eyebrow">Nuestros Locales</p>
+          <h2>Encuéntranos cerca de ti</h2>
+          <p class="section-desc">Tres puntos de atención para que siempre tengas tu sushi favorito a la mano.</p>
+        </div>
+
+        <div class="location-grid">
+
+          <article class="location-card">
+            <div class="location-card-header">
+              <span class="location-num">01</span>
+              <h3>San Esteban</h3>
+            </div>
+            <div class="location-card-body">
+              <div class="location-info">
+                <i data-lucide="map-pin"></i>
+                <span>Av. Alessandri 1609, Street Center</span>
+              </div>
+              <div class="location-info">
+                <i data-lucide="clock"></i>
+                <span>Mar a Dom · 12:30 – 22:30</span>
+              </div>
+              <div class="location-info">
+                <i data-lucide="phone"></i>
+                <span>+56 9 5432 2784</span>
+              </div>
+              <div class="location-info">
+                <i data-lucide="instagram"></i>
+                <span>@sushi.dodo_</span>
+              </div>
+            </div>
+            <div class="location-card-actions">
+              <a class="btn btn-outline" href="https://wa.me/56954322784" target="_blank" rel="noreferrer">
+                <i data-lucide="message-circle"></i> WhatsApp
+              </a>
+              <a class="btn btn-outline" href="https://maps.app.goo.gl/c9dkjNmNpPiyApYx7" target="_blank" rel="noreferrer">
+                <i data-lucide="map-pin"></i> Ver mapa
+              </a>
+            </div>
+          </article>
+
+          <article class="location-card">
+            <div class="location-card-header">
+              <span class="location-num">02</span>
+              <h3>San Felipe</h3>
+            </div>
+            <div class="location-card-body">
+              <div class="location-info">
+                <i data-lucide="map-pin"></i>
+                <span>Dirección por confirmar</span>
+              </div>
+              <div class="location-info">
+                <i data-lucide="clock"></i>
+                <span>Mar a Dom · 12:30 – 22:30</span>
+              </div>
+              <div class="location-info">
+                <i data-lucide="phone"></i>
+                <span>Por confirmar</span>
+              </div>
+              <div class="location-info">
+                <i data-lucide="instagram"></i>
+                <span>@sushi_dodo_san_felipe</span>
+              </div>
+            </div>
+            <div class="location-card-actions">
+              <a class="btn btn-outline" href="https://wa.me/56954322784" target="_blank" rel="noreferrer">
+                <i data-lucide="message-circle"></i> WhatsApp
+              </a>
+              <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Dodo+Sushi+Bar+San+Felipe" target="_blank" rel="noreferrer">
+                <i data-lucide="map-pin"></i> Ver mapa
+              </a>
+            </div>
+          </article>
+
+          <article class="location-card">
+            <div class="location-card-header">
+              <span class="location-num">03</span>
+              <h3>Santa María</h3>
+            </div>
+            <div class="location-card-body">
+              <div class="location-info">
+                <i data-lucide="map-pin"></i>
+                <span>Dirección por confirmar</span>
+              </div>
+              <div class="location-info">
+                <i data-lucide="clock"></i>
+                <span>Mar a Dom · 12:30 – 22:30</span>
+              </div>
+              <div class="location-info">
+                <i data-lucide="phone"></i>
+                <span>Por confirmar</span>
+              </div>
+              <div class="location-info">
+                <i data-lucide="instagram"></i>
+                <span>@dodo_sushi_santa_maria</span>
+              </div>
+            </div>
+            <div class="location-card-actions">
+              <a class="btn btn-outline" href="https://wa.me/56954322784" target="_blank" rel="noreferrer">
+                <i data-lucide="message-circle"></i> WhatsApp
+              </a>
+              <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Dodo+Sushi+Bar+Santa+Maria" target="_blank" rel="noreferrer">
+                <i data-lucide="map-pin"></i> Ver mapa
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section class="section reviews-section">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="eyebrow">Lo que dicen nuestros clientes</p>
+          <h2>Experiencias reales</h2>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p>"El mejor sushi de la zona sin duda. Los rolls de salmón están increíbles y el servicio es muy rápido."</p>
+            <div class="review-author"><strong>María G.</strong> · San Esteban</div>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p>"Pedí por WhatsApp y en menos de 20 minutos tenía mi pedido. Fresco, bien presentado y delicioso."</p>
+            <div class="review-author"><strong>Carlos M.</strong> · San Felipe</div>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p>"Me encanta que tienen locales en distintos puntos. El sushi tempura es mi favorito, siempre perfecto."</p>
+            <div class="review-author"><strong>Valentina R.</strong> · Santa María</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO / CTA -->
+    <section class="section contact-section" id="contacto">
+      <div class="section-inner contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Contáctanos</p>
+          <h2>¿Listo para pedir?</h2>
+          <p>Escríbenos por WhatsApp, llámanos o visita el local más cercano. Respondemos en menos de 15 minutos.</p>
+          <div class="contact-note">
+            <i data-lucide="zap"></i>
+            <span>Respuesta garantizada en menos de 15 minutos por WhatsApp</span>
+          </div>
+        </div>
+        <div class="contact-actions">
+          <a class="contact-btn contact-btn--wa" href="https://wa.me/56954322784" target="_blank" rel="noreferrer">
+            <i data-lucide="message-circle"></i>
+            <div><strong>Pedir por WhatsApp</strong><small>La forma más rápida</small></div>
+          </a>
+          <a class="contact-btn" href="tel:+56954322784">
+            <i data-lucide="phone"></i>
+            <div><strong>Llamar al local</strong><small>+56 9 5432 2784</small></div>
+          </a>
+          <a class="contact-btn" href="https://www.instagram.com/sushi.dodo_" target="_blank" rel="noreferrer">
+            <i data-lucide="instagram"></i>
+            <div><strong>Instagram</strong><small>@sushi.dodo_</small></div>
+          </a>
+          <a class="contact-btn" href="#locales">
+            <i data-lucide="map-pin"></i>
+            <div><strong>Visitar el local</strong><small>3 puntos de atención</small></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a class="whatsapp-float" href="https://wa.me/56954322784?text=Hola!%20Quiero%20hacer%20un%20pedido%20de%20Dodo%20Sushi%20Bar" target="_blank" rel="noreferrer" aria-label="Pedir por WhatsApp">
+    <i data-lucide="message-circle"></i>
+    <span>Pedir ahora</span>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Dodo Sushi Bar" class="footer-logo">
+        <p>El mejor sushi de la zona de Aconcagua. Rolls artesanales con ingredientes frescos.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/sushi.dodo_" target="_blank" rel="noreferrer"><i data-lucide="instagram"></i></a>
+          <a href="https://wa.me/56954322784" target="_blank" rel="noreferrer"><i data-lucide="message-circle"></i></a>
+          <a href="https://maps.app.goo.gl/c9dkjNmNpPiyApYx7" target="_blank" rel="noreferrer"><i data-lucide="map-pin"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#carta">Carta</a>
+        <a href="#locales">Locales</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-links">
+        <h4>Locales</h4>
+        <a href="#">San Esteban</a>
+        <a href="#">San Felipe</a>
+        <a href="#">Santa María</a>
+      </div>
+      <div class="footer-links">
+        <h4>Horario</h4>
+        <p>Mar a Domingo</p>
+        <p>12:30 – 22:30 hrs</p>
+        <a href="https://wa.me/56954322784" target="_blank" rel="noreferrer" class="btn btn-primary" style="margin-top:1rem; display:inline-flex;">Pedir ahora</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Dodo Sushi Bar · Todos los derechos reservados</span>
+      <span>Diseñado con ❤️ para San Esteban</span>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Dodo Sushi Bar Logo</title>
+  <circle cx="120" cy="120" r="110" fill="#C1121F" />
+  <path d="M72 118c0-22 18-40 40-40s40 18 40 40-18 40-40 40-40-18-40-40Z" fill="#fff" />
+  <circle cx="96" cy="118" r="22" fill="#0A0A0A" />
+  <circle cx="144" cy="118" r="22" fill="#0A0A0A" />
+  <path d="M92 92c-22-14-42-42-56-20-14 22 2 50 22 44s26-28 34-24Z" fill="#0A0A0A" />
+  <path d="M148 92c22-14 42-42 56-20 14 22-2 50-22 44s-26-28-34-24Z" fill="#0A0A0A" />
+  <path d="M92 156c7 16 26 25 40 20" stroke="#0A0A0A" stroke-width="14" stroke-linecap="round" fill="none" />
+  <text x="120" y="210" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF">DODO</text>
+</svg>
